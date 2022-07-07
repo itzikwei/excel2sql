@@ -1,0 +1,248 @@
+/* Last modefied against DB version 7.2 */
+
+/*.t-Form-inputContainer .t-Button--helpButton, .t-Form-inputContainer .t-Form-helpButton {
+    top: -0.5rem;
+}*/
+
+/* we want the the help symbol (question mark) will be closed to the text as possible to prevent line break */
+.t-Button--noUI {
+    padding-left: 3px;
+}
+
+div#topRightRegion{
+	display: flex;
+	justify-content: center;
+}
+
+img.imageMaxWidth{
+    max-width: 100%;
+    max-height: 30rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* fix bug in Apex with opposite order of pre-text and post-text in "display only field */
+.t-Form-itemText--pre {
+    order: 0 !important;
+}
+
+/* make tables with empty rows to take less space in page */
+.a-IRR-noDataMsg {
+	padding: 0px;
+	margin: 0px;
+}
+
+/* add scrollbar to top of every interactive table.
+   the second css is to fix a bug in the scroller that happens only in our app */
+.t-fht-thead{
+  overflow: auto !important;
+}
+.js-stickyTableHeader.is-stuck>table:after {
+    width: 100% !important;
+}
+
+/* make bigger text, for customer requests */
+.t-Form-label{font-size:1.35rem}
+.t-Button{font-size:1.35rem}
+.a-Button{font-size:1.35rem}
+input[type="text"]{font-size:1.35rem}
+a{font-size:1.35rem}
+
+/* attach breadcrumb to the top */
+.t-BreadcrumbRegion-body{
+	margin-top: -0.9em;
+}
+
+span.glycerol_stock_icon{
+    color: #ff9d00;
+    font-size: 15px;
+    padding-right: 2px;
+}
+
+/* style for buttons in workflow tables */
+.workflow_buttons {
+	box-shadow: 0 0 0 1px rgb(6 50 251 / 65%) inset !important;
+}
+.delete_workflow_methods_button {
+    box-shadow: 0 0 0 1px rgb(238 9 9 / 65%) inset !important;
+}
+
+.duplicate_methods_button {
+	box-shadow: 0 0 0 1px rgb(6 50 251 / 65%) inset !important;
+}
+
+/* since chrome version 94.0 (Aug-2021) there is a bug the field in modal dialog dissapear when clicking them
+   so this is a solution until they will fix it */
+   .apex-item-select:focus, .apex-item-text:focus, .apex-item-textarea:focus {
+	border: 1.05px solid #dfdfdf !important;
+}
+
+/* relevant to the statuses of objects(shown in tree and pages of objects) */
+span.statusCodeColumn {
+    border: 1px solid black;
+    padding: 1px;
+    background-color: #d8bdf2;
+    color: black;
+}
+span.statusCodeCP {
+    border: 1px solid black;
+    padding: 1px;
+    background-color: PaleTurquoise;
+    color: black;
+}
+span.statusCodePlate {
+    border: 1px solid black;
+    padding: 1px;
+    background-color: WhiteSmoke;
+    color: grey;
+}
+span.statusCodePlate.pStatus0 { /* not in crims */
+    background-color: blue;
+    color: white;
+}
+span.statusCodePlate.pStatus1 { /* active */
+    background-color: green;
+    color: white;
+}
+span.statusCodePlate.pStatus2 { /* ignore */
+    background-color: yellow;
+    color: green;
+}
+span.statusCodePlate.pStatus3 { /* Done */
+    background-color: orange;
+    color: black;
+}
+span.statusCodePlate.pStatus4 { /* Dry */
+    background-color: pink;
+    color: orangered;
+}
+span.statusCodePlate.pStatus5 { /* deleted */
+    background-color: red;
+    color: white;
+}
+span.statusCodePlate.dry1 {
+    background-color: orange;
+    color: white;
+}
+span.statusCodePlate.xray1 {
+    background-color: black;
+    color: white;
+}
+span.statusCodePlate.inSeed1 {
+    background-color: limegreen;
+    color: white;
+}
+span.statusCodePlate.withSeed1 {
+    background-color: olivedrab;
+    color: white;
+}
+span.statusCodeXray {
+    border: 1px solid black;
+    padding: 1px;
+    background-color: black;
+    color: white;
+}
+
+/* relevant to the icons of objects  */
+span.colorfa.fa-folder-open-o {	/* objects, root */
+	color: black !important;
+}
+span.colorfa.fa-archive {	/* objects, study */
+	color: #ff7f00 !important;
+}
+span.colorfa.fa-snowflake {	/* objects, cp */
+	color: #377eb8 !important;
+}
+span.colorfa.fa-bicycle {	/* objects, crystallisation trial */
+	color: #ff0029 !important;
+}
+span.colorfa.fa-magic {	/* objects, seed */
+	color: #66a61e !important;
+}
+span.colorfa.fa-ship {	/* objects, siak mix */
+	color: #00d2d5 !important;
+}
+span.colorfa.fa-layout-grid-3x {	/* objects, #unused# */
+	color: #8dd3c7 !important;
+}
+span.colorfa.fa-glasses {	/* objects, screening */
+	color: #a65628 !important;
+}
+span.colorfa.fa-recycle {	/* objects, optimization */
+	color: #984ea3 !important;
+}
+span.colorfa.fa-plus-circle-o {	/* objects, additive */
+	color: #7f80cd !important;
+}
+span.colorfa.fa-bubble-chart {	/* objects, detergent */
+	color: rgb(148, 148, 0) !important;
+}
+span.colorfa.fa-network-hub {	/* objects, X-ray */
+	color: black !important;
+}
+span.colorfa.fa-flask {	/* objects, #unused# */
+	color: #f781bf !important;
+}
+span.colorfa.fa-diamond {	/* objects, in situ soak */
+	color: purple !important;
+}
+span.colorfa.fa-th.fam-is-info:after {	/* #unused#, modifying fam elements*/
+	color: #00d2d5 !important;
+}
+span.colorfa.fa-map-pin {	/* objects, soak plate */
+	color: #2b2aab !important;
+}
+span.colorfa.fa-link {	/* objects, protein project */
+	color: #a63bff !important;
+}
+span.colorfa.fa-check-square {	/* objects, success */
+	color: green !important;
+}
+span.expression {	/* objects, expression */
+	color: green !important;
+}
+span.production {	/* objects, production */
+	color: blue !important;
+}
+span.expr_analysis {	/* objects, expression analysis */
+	color: red !important;
+}
+span.colorfa.fa-braille {	/* objects, cell treatment */
+	color: #04cd0b  !important;
+}
+span.colorfa.fa-hourglass-3 {	/* objects, purification on colomn */
+	color: #ff03e0f2 !important;
+}
+span.colorfa.fa-flask {	/* objects, purification in solution */
+	color: #00dbf1 !important;
+}
+span.colorfa.fa-send-o {	/* objects, delivery */
+	color: #ff0000f2 !important;
+}
+span.colorfa.fa-sign-in {	/* objects, production external */
+	color: blue !important;
+}
+span.colorfa.fa-flashlight {	/* objects, protein characteristics */
+	color: #ff5e00 !important;
+}
+span.colorfa.fa-layers {	/* objects, co purification */
+	color: #ff00b5f2 !important;
+}
+
+/* relevant to plates */
+.dropP {
+    background-color:rgb(150,150,150);
+}
+.dropC {
+    background-color:rgb(238,238,238);
+}
+.dropS {
+    background-color: rgb(189,189,189);    
+}
+.dropO {
+    background-color: rgb(64,64,64);
+    color: white;
+}
+.dropSM {
+    background-color:rgb(150,150,150);
+}
