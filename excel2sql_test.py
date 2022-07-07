@@ -22,7 +22,7 @@ g_sql_reserved_keywords = {'ACCESS':'ACCESS','ADD':'ADD','ALL':'ALL','ALTER':'AL
 'VIEW':'VIEW','WHENEVER':'WHENEVER','WHERE':'WHERE','WITH':'WITH'
 }
 
-
+g_test = 'testing'
 g__db_version_number = re.findall(r'\d+\.\d*|\d+', g_excel_file_name)[0]    # extract version number from file name
 g_script_directory = os.path.dirname(os.path.realpath(sys.argv[0]))     # dir of this script
 g_excel_path = os.path.join(g_script_directory, g_excel_file_name)      # extract path of the excel file
