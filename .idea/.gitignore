@@ -1,0 +1,11 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+/inspectionProfiles/
+/excel2sql.iml
+/misc.xml
+/modules.xml
+/vcs.xml
+/venv
+../.git/
+../venv/
