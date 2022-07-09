@@ -56,6 +56,14 @@ g_ddl_drops_queries = []
 g_ddl_table_columns_num = 9
 
 
+def feature_function_push_to_main():
+    if 1 == 1:
+        print('One is One')
+    else:
+        print('Logic failure')
+    return 0
+
+
 def main():
     xlsx_to_raw_data()
     # loop all the sheets, and act accordingly to sheet type
@@ -73,6 +81,7 @@ def main():
         return -1
 
     generate_files()
+
 
 """ take all the excel sheets and put them in a list as matrix of strings """
 def xlsx_to_raw_data():
