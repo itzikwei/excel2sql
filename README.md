@@ -2,7 +2,7 @@
 
 add some notes to test, here make a conflict
 
-another changes to push to repository
+another changes to push to repository qqqqqqqeeeeeeeee
 
 
 adding new stuff
